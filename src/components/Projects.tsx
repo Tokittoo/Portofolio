@@ -1,5 +1,5 @@
 'use client'
-
+import './style.css'
 import Card from './Card'
 import Link from 'next/link'
 import { IconBrandCss3, IconBrandFramerMotion, IconBrandHtml5, IconBrandJavascript, IconBrandMongodb, IconBrandNextjs , IconBrandNodejs, IconBrandReact, IconBrandTailwind, IconBrandTypescript, IconChevronDown } from '@tabler/icons-react'
@@ -73,7 +73,7 @@ const MongoDBls = {
 const projects: Project[] = [
   {
     title: 'Sibhi',
-    description: "A personal portfolio or project showcase for xibhi, featuring creative works, coding projects, and professional insights.",
+    description: "A personal portofolio for cyber security enthusiast featuring writeups, projects, and professional insights.",
     link: 'https://xibhi.github.io',
     tags:[
       Html,
@@ -138,7 +138,7 @@ const projects: Project[] = [
  const upcomingProjects: Project[] = [
   {
     title: 'Penquin',
-    description: "An AI-powered DSA platform with a personal tutor that spots your mistakes, explains patterns, and helps you level up—smarter than brute force.",
+    description: "An advanced bug hunting toolkit — a collaborative project with Sibhi focused on developing a personalized, high-impact toolkit for advanced vulnerability discovery.",
     tags: [
       NextJS,
       NodeJS,
@@ -192,7 +192,9 @@ function Projects() {
       <div className='grid md:grid-cols-2 max-md:mx-4 gap-4'>
         {
           projects.map(project => (
-            <Card project={project} key={project.title} />
+            <div key={project.title} className="projects">
+              <Card project={project} />
+            </div>
           ))
         }
       </div>
@@ -206,7 +208,9 @@ function Projects() {
       <div className='grid md:grid-cols-2 max-md:mx-4 gap-4'>
         {
           upcomingProjects.map(project => (
-            <Card project={project} key={project.title} />
+            <div key={project.title} className="projects">
+              <Card project={project} />
+            </div>
           ))
         }
       </div>
