@@ -15,6 +15,7 @@ export type Project = {
   }[]
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const NextJS ={
   name: 'Next.js',
   logo: <IconBrandNextjs />
@@ -40,6 +41,7 @@ const Tailwind = {
   logo: <IconBrandTailwind />
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const Motionls = {
   name: 'Motion',
   logo: <IconBrandFramerMotion />
@@ -50,16 +52,19 @@ const TypeScript = {
   logo: <IconBrandTypescript />
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const NodeJS = {
   name: 'NodeJS',
   logo: <IconBrandNodejs />
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const JavaScript = {
   name: 'JavaScript',
   logo: <IconBrandJavascript />
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const MongoDBls = {
   name: 'MongoDB',
   logo: <IconBrandMongodb />
