@@ -40,7 +40,7 @@ const Tailwind = {
   logo: <IconBrandTailwind />
 }
 
-const Motion = {
+const Motionls = {
   name: 'Motion',
   logo: <IconBrandFramerMotion />
 }
@@ -60,7 +60,7 @@ const JavaScript = {
   logo: <IconBrandJavascript />
 }
 
-const MongoDB = {
+const MongoDBls = {
   name: 'MongoDB',
   logo: <IconBrandMongodb />
 }
