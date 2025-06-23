@@ -34,3 +34,10 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+
+.projects:hover{
+    transform: translateY(-10px);
+    border-color: #ffffff;
+    box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1);
+}

@@ -24,7 +24,7 @@ const primaryLinks: Link[] = [
 const socialLinks: Link[] = [
   {
     name: 'GitHub',
-    link: 'https://github.com/crish-dev'
+    link: 'https://github.com/Tokittoo'
   },
   {
     name: 'Telegram',
@@ -45,6 +45,10 @@ const projectLinks: Link[] = [
     name: 'Sibhi',
     link: 'https://xibhi.github.io/'
   },
+  {
+    name: 'Penquin',
+    link: 'https://penquin.vercel.app/'
+  }
 ]
 
 const Footer = () => {

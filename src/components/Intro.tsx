@@ -63,7 +63,7 @@ const Intro = () => {
         </motion.div>
       </div>
       <motion.p variants={childVariant} className='text-zinc-700 dark:text-zinc-400 mt-8'>
-        I&apos;m just a dude who turns coke into code. I build dope stuff that doesn&apos;t end up in my GitHub graveyard—&apos;cause the world&apos;s got enough abandoned side projects. My code slaps harder than my GPA ever did.
+        I&apos;m just a dude who turns coke into code. I build dope stuff that doesn&apos;t end up in my GitHub graveyard—&apos;cause the world&apos;s got enough abandoned side projects. My code slaps harder than my CGPA ever did.
       </motion.p>
     </motion.div>
   )
