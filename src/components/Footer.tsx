@@ -42,7 +42,7 @@ const socialLinks: Link[] = [
 
 const projectLinks: Link[] = [
   {
-    name: 'Sibhi',
+    name: 'Sibhi v1.0',
     link: 'https://xibhi.github.io/'
   },
   {
