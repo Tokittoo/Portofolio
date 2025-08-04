@@ -73,7 +73,7 @@ const MongoDBls = {
 const projects: Project[] = [
   {
     title: 'Sibhi v1.0',
-    description: "A personal portofolio for cyber security enthusiast featuring writeups, projects, and professional insights.",
+    description: "A Personal Portofolio for Cyber Security Enthusiast Featuring Writeups, Skills, Experience, and Professional Insights.",
     link: 'https://xibhi.github.io',
     tags:[
       Html,
@@ -149,7 +149,7 @@ const projects: Project[] = [
  const upcomingProjects: Project[] = [
     {
     title: 'Sibhi v2.0',
-    description: "A Professional portofolio for cyber security enthusiast featuring writeups, projects, and professional insights.",
+    description: "A Professional Portofolio for Cyber Security Enthusiast Featuring Writeups, Skills, Experience, and Professional Insights.",
     link: 'https://xibhi.vercel.app',
     tags:[
       React,
