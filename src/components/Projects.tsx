@@ -147,6 +147,17 @@ const projects: Project[] = [
 ]
 
  const upcomingProjects: Project[] = [
+    {
+    title: 'Sibhi v2.0',
+    description: "A Professional portofolio for cyber security enthusiast featuring writeups, projects, and professional insights.",
+    link: 'https://xibhi.vercel.app',
+    tags:[
+      React,
+      TypeScript,
+      Tailwind,
+      NextJS,
+    ]
+  }
   /*{
     title: 'Penquin',
     description: "An advanced bug hunting toolkit — a collaborative project with Sibhi focused on developing a personalized, high-impact toolkit for advanced vulnerability discovery.",
