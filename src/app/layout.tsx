@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     siteName: "Krishna Prasath",
     images: [
       {
-        url: "/Main.webp",
+        url: "https://crish.vercel.app/Main.webp",
         width: 1200,
         height: 630,
         alt: "Krishna Prasath — Developer",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     title: "Krishna Prasath | Developer",
     description:
       "Developer portfolio of Krishna Prasath — building fast, accessible, beautiful web apps.",
-    images: ["/Main.webp"],
+    images: ["https://crish.vercel.app/Main.webp"],
   },
   robots: {
     index: true,
@@ -108,6 +108,9 @@ export default function RootLayout({
               url: "https://crish.vercel.app",
               jobTitle: "Developer",
               image: "https://crish.vercel.app/Main.webp",
+              sameAs: [
+                // Add your profiles for stronger entity signals
+              ],
             }),
           }}
         />

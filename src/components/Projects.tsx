@@ -152,7 +152,7 @@ function Projects() {
       variants={parentVariant}
       className='md:p-2 p-8' id='projects'
     >
-      <motion.h1 variants={childVariant} className='text-4xl ml-2 my-8 font-bold font-sans tracking-tight'>Projects</motion.h1>
+      <motion.h2 variants={childVariant} className='text-4xl ml-2 my-8 font-bold font-sans tracking-tight'>Projects</motion.h2>
       <div className='grid md:grid-cols-2 max-md:mx-4 gap-4'>
         {
           projects.map(project => (
@@ -168,7 +168,7 @@ function Projects() {
         </button>
       </Link>
 
-      <h1 className='text-4xl ml-2 my-8 font-bold font-sans tracking-tight'>Upcoming Projects</h1>
+      <h2 className='text-4xl ml-2 my-8 font-bold font-sans tracking-tight'>Upcoming Projects</h2>
       <div className='grid md:grid-cols-2 max-md:mx-4 gap-4'>
         {
           upcomingProjects.map(project => (

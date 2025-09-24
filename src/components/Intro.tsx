@@ -58,12 +58,12 @@ const Intro = () => {
             src={'/Main.webp'}
             height={120}
             width={120}
-            alt='Image'
+            alt='Krishna Prasath — Developer headshot'
           />
         </motion.div>
       </div>
       <motion.p variants={childVariant} className='text-zinc-700 dark:text-zinc-400 mt-8'>
-        I&apos;m just a dude who turns coke into code. I build dope stuff that doesn&apos;t end up in my GitHub graveyard—&apos;cause the world&apos;s got enough abandoned side projects. My code slaps harder than my CGPA ever did.
+      I'm just a dude who turns coke into code. I build dope stuff that doesn't end up in my GitHub graveyard—'cause the world's got enough abandoned side projects. My code slaps harder than my CGPA ever did.
       </motion.p>
     </motion.div>
   )
