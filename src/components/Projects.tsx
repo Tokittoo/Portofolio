@@ -2,7 +2,7 @@
 import './style.css'
 import Card from './Card'
 import Link from 'next/link'
-import { IconBrandCss3, IconBrandFramerMotion, IconBrandHtml5, IconBrandJavascript, IconBrandMongodb, IconBrandNextjs , IconBrandNodejs, IconBrandReact, IconBrandTailwind, IconBrandTypescript, IconChevronDown } from '@tabler/icons-react'
+import { IconBrandCss3, IconBrandFramerMotion, IconBrandHtml5, IconBrandJavascript, IconBrandNextjs , IconBrandNodejs, IconBrandReact, IconBrandTailwind, IconBrandTypescript, IconChevronDown } from '@tabler/icons-react'
 import { motion } from 'motion/react'
 
 export type Project = {
@@ -15,7 +15,6 @@ export type Project = {
   }[]
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const NextJS ={
   name: 'Next.js',
   logo: <IconBrandNextjs />
@@ -41,7 +40,6 @@ const Tailwind = {
   logo: <IconBrandTailwind />
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const Motionls = {
   name: 'Motion',
   logo: <IconBrandFramerMotion />
@@ -52,28 +50,20 @@ const TypeScript = {
   logo: <IconBrandTypescript />
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const NodeJS = {
   name: 'NodeJS',
   logo: <IconBrandNodejs />
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const JavaScript = {
   name: 'JavaScript',
   logo: <IconBrandJavascript />
 }
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const MongoDBls = {
-  name: 'MongoDB',
-  logo: <IconBrandMongodb />
-}
-
 const projects: Project[] = [
   {
     title: 'Sibhi v1.0',
-    description: "A Personal Portofolio for Cyber Security Enthusiast Featuring Writeups, Skills, Experience, and Professional Insights.",
+    description: "Personal cybersecurity portfolio showcasing write-ups, skills, experience, and professional insights.",
     link: 'https://xibhi.github.io',
     tags:[
       Html,
@@ -83,73 +73,19 @@ const projects: Project[] = [
   },
   {
     title: 'Penquin',
-    description: "A collaborative project with Sibhi focused on developing a high-impact toolkit for advanced vulnerability discovery.",
+    description: "Collaborative security tooling initiative with Sibhi delivering a modular toolkit for advanced vulnerability discovery.",
     link:'https://penquin.vercel.app',
     tags: [
       NextJS,
       NodeJS,
       TypeScript,
-      Tailwind
-    ]
-  }
-  /*
-  {
-    title: 'VidChat',
-    description: 'VidChat is a real-time video chat app. It lets users instantly get straight-up face-to-face conversations in the browser.',
-    link: 'https://vid-chat-peach.vercel.app',
-    tags: [
-      NextJS,
-      TypeScript,
-      { name: 'Socket.io' },
-      { name: 'WebRTC' },
-      Tailwind
+      Tailwind,
+      Motionls
     ]
   },
   {
-    title: 'FinTrack',
-    description: 'FinTrack is a sleek finance tracking web app, designed to make adulting (aka budgeting) slightly less painful.',
-    link: 'https://fintrack-flax-beta.vercel.app',
-    tags: [
-      NextJS,
-      TypeScript,
-      { name: 'ShadCN' },
-      { name: 'Aceternity UI' },
-      Tailwind
-    ]
-  },
-  {
-    title: 'Sputify',
-    description: 'Sputify is my take on Spotify—built from scratch to stream bops. To deliver a vibe-heavy music experience... minus the licensing fees.',
-    link: 'https://github.com/M-SaaD-H/Sputify',
-    tags: [
-      React,
-      NodeJS,
-      { name: 'ShadCN' },
-      JavaScript,
-      Tailwind
-    ]
-  },
-  {
-    title: 'Zootube',
-    description: 'ZooTube is a YouTube-inspired backend clone. It handles user auth, video uploads, likes, and comments like the real deal (minus the copyright strikes).',
-    link: 'https://github.com/M-SaaD-H/Zootube',
-    tags: [
-      NodeJS,
-      MongoDB,
-      { name: 'Cloudinary' },
-      JavaScript,
-      NodeJS,
-      MongoDB,
-      { name: 'Cloudinary' },
-      JavaScript
-    ]
-  }*/
-]
-
- const upcomingProjects: Project[] = [
-    {
     title: 'Sibhi v2.0',
-    description: "A Professional Portofolio for Cyber Security Enthusiast Featuring Writeups, Skills, Experience, and Professional Insights.",
+    description: "Redesigned professional cybersecurity portfolio with structured write-ups, skills, experience, and achievements.",
     link: 'https://xibhi.vercel.app',
     tags:[
       React,
@@ -158,16 +94,22 @@ const projects: Project[] = [
       NextJS,
     ]
   }
-  /*{
-    title: 'Penquin',
-    description: "An advanced bug hunting toolkit — a collaborative project with Sibhi focused on developing a personalized, high-impact toolkit for advanced vulnerability discovery.",
-    tags: [
+]
+
+ const upcomingProjects: Project[] = [
+    {
+    title: 'PenquinX',
+    description: "Next-gen security platform with modular scanners, live recon, and CI-ready APIs.",
+    link: '',
+    tags:[
       NextJS,
       NodeJS,
       TypeScript,
-      Tailwind
+      Tailwind,
+      Motionls
     ]
-  }*/
+  }
+  
 ]
 
 function Projects() {

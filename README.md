@@ -1,73 +1,91 @@
-## Krishna Prasath – Developer Portfolio
+## Krishna Prasath — Developer Portfolio
 
-Modern personal portfolio built with Next.js (App Router), TypeScript, and Tailwind CSS. Deployed on Vercel.
+Elegant, developer-centric portfolio showcasing projects, skills, and experience. Built for performance, accessibility, and SEO.
 
-Live site: `https://crish.vercel.app`
+`https://crish.vercel.app`
 
-### Features
-- Fast, responsive UI with dark mode
-- Projects and tags components
-- Global SEO: titles, descriptions, Open Graph/Twitter, canonical, robots
-- JSON-LD (Person, WebSite) for rich results
+![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js) ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript) ![Tailwind](https://img.shields.io/badge/TailwindCSS-3-38B2AC?logo=tailwindcss) ![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)
 
-### Tech Stack
-- Next.js 14 (App Router)
+---
+
+### Highlights
+- Accessible, responsive UI with dark mode
+- Clean project cards with tech tags and animations
+- First-class SEO (Open Graph, Twitter, canonical, robots)
+- Structured data (JSON-LD: Person, WebSite) for rich results
+
+### Tech
+- Next.js (App Router)
 - TypeScript
 - Tailwind CSS
-- Vercel (deployment)
+- Vercel (hosting)
 
-### Local Development
+### Architecture
+- App Router with `layout.tsx` providing global theme, navigation, footer, and SEO metadata
+- Component-driven design: `Card`, `Projects`, `Intro`, `Tags`, etc.
+- Context for theme toggling via `ThemeContextProvider`
+- Static assets served from `public/`
+
+### Quickstart
 ```bash
-# Install dependencies
 npm install
-
-# Run dev server
 npm run dev
-
-# Build & start
-npm run build
-npm start
+# production
+npm run build && npm start
 ```
-App will be available at http://localhost:3000.
+Local: http://localhost:3000
 
 ### Scripts
-- `dev`: Start local dev server
-- `build`: Type-check and build production bundle
-- `start`: Run the production server
-- `lint`: Run ESLint
+- `dev` – Start dev server
+- `build` – Type-check and build
+- `start` – Run production server
+- `lint` – Lint codebase
 
-### Project Structure
+### Structure
 ```
 src/
-  app/            # App Router routes, layout, pages
-  components/     # Reusable UI components
-  contexts/       # React context providers
-public/           # Static assets (e.g., Main.webp)
+  app/          # App Router pages and layout
+  components/   # UI components (Cards, Projects, etc.)
+  contexts/     # Theme and shared state
+public/         # Static assets (Main.webp, icons)
 ```
 
-### SEO Configuration
-Global SEO lives in `src/app/layout.tsx` using Next.js `metadata`.
-- Title template: "%s | Krishna Prasath"
-- Description: concise summary of Krishna’s developer portfolio
-- Keywords: "Krishna", "Krishna Prasath", "Developer", "Next.js", etc.
-- Canonical: `https://crish.vercel.app`
-- Open Graph/Twitter with preview image
-- Robots/Googlebot directives
-- JSON-LD scripts: `Person` and `WebSite`
+### Performance & Quality
+- Targets Core Web Vitals thresholds (LCP < 2.5s, CLS < 0.1, INP < 200ms)
+- Font optimization via `next/font` (Geist)
+- Image optimization via Next Image-ready assets
+- Strict TypeScript, ESLint configured via project rules
 
-To customize:
-- Update titles/descriptions per page in `src/app/**/page.tsx` by exporting `metadata`
-- Replace social image at `public/Main.webp` (recommended 1200×630)
-- Add social links in JSON-LD `sameAs` if desired
+### SEO & Social
+SEO is configured in `src/app/layout.tsx` using Next.js `metadata`.
+- Title template: "%s | Krishna Prasath"
+- Canonical: `https://crish.vercel.app`
+- Open Graph/Twitter: uses `public/Main.webp`
+- Robots/Googlebot: indexing enabled with rich previews
+- JSON-LD: `Person` and `WebSite` via inline scripts
+
+Customize per page by exporting `metadata` from each `page.tsx`. Replace the preview image by updating `public/Main.webp` (recommended 1200×630).
 
 ### Deployment
-1) Push to GitHub/GitLab
-2) Import the repo on Vercel
-3) Set Production Branch and deploy
+1. Push to your repository
+2. Import on Vercel and deploy the `main` branch
+3. Submit the site to Google Search Console (optional but recommended)
 
-After deployment:
-- Submit sitemap/URL to Google Search Console
-- Add domain verification (meta tag) if needed
+### Conventions
+- Components use PascalCase, props are typed
+- Avoid deep nesting; prefer early returns and small components
+- No inline commentary; prefer self-documenting code and short docstrings
+
+### Roadmap
+- Add `sitemap.xml` and `robots.txt` via `next-sitemap`
+- Add JSON-LD `sameAs` with social profiles
+- Per-page metadata overrides (e.g., `/dashboard`)
+- Project analytics and engagement tracking
+
+### Customization
+- Update copy in `src/components/Intro.tsx` and project data in `src/components/Projects.tsx`
+- Add social links to JSON-LD `sameAs` in `layout.tsx`
+- Tweak theme and transitions in component styles
 
 ### License
-This repository is provided as-is for personal portfolio use.
+Personal portfolio — feel free to reference for learning and inspiration.

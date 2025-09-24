@@ -48,6 +48,10 @@ const projectLinks: Link[] = [
   {
     name: 'Penquin',
     link: 'https://penquin.vercel.app/'
+  },
+  {
+    name: 'Sibhi v2.0',
+    link: 'https://xibhi.vercel.app/'
   }
 ]
 
