@@ -72,6 +72,17 @@ const projects: Project[] = [
     ]
   },
   {
+    title: 'Sibhi v2.0',
+    description: "Redesigned professional cybersecurity portfolio with structured write-ups, skills, experience, and achievements.",
+    link: 'https://xibhi.vercel.app',
+    tags:[
+      React,
+      TypeScript,
+      Tailwind,
+      NextJS,
+    ]
+  },
+  {
     title: 'Penquin',
     description: "Collaborative security tooling initiative with Sibhi delivering a modular toolkit for advanced vulnerability discovery.",
     link:'https://penquin.vercel.app',
@@ -81,17 +92,6 @@ const projects: Project[] = [
       TypeScript,
       Tailwind,
       Motionls
-    ]
-  },
-  {
-    title: 'Sibhi v2.0',
-    description: "Redesigned professional cybersecurity portfolio with structured write-ups, skills, experience, and achievements.",
-    link: 'https://xibhi.vercel.app',
-    tags:[
-      React,
-      TypeScript,
-      Tailwind,
-      NextJS,
     ]
   }
 ]
