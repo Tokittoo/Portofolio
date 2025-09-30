@@ -3,11 +3,13 @@
 .projects {
   transition: all 0.3s ease-in-out;
   border: 1px solid transparent;
+  border-radius: 0.5rem; /* match rounded-lg */
 }
 
 .projects:hover {
   transform: translateY(-10px);
   border-color: #ffffff;
+  border-radius: 0.5rem; /* ensure rounded corners on hover */
   box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1);
 }
 
@@ -15,6 +17,7 @@
 @media (prefers-color-scheme: dark) {
   .projects:hover {
     border-color: #ffffff;
+    border-radius: 0.5rem;
   }
 }
 
@@ -22,6 +25,7 @@
 @media (prefers-color-scheme: light) {
   .projects:hover {
     border-color: #000000;
+    border-radius: 0.5rem;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   }
 }

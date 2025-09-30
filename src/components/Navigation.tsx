@@ -30,7 +30,7 @@ function Navigation() {
     <div className='p-8'>
       <div
         onMouseLeave={() => setHoveredIdx(null)}
-        className='hidden flex-row items-center justify-center space-x-2 text-sm font-medium text-zinc-600 transition duration-200 hover:text-zinc-800 lg:flex lg:space-x-2 h-max'
+        className='hidden flex-row items-center justify-center space-x-2 text-lg font-medium text-zinc-600 transition duration-200 hover:text-zinc-800 lg:flex lg:space-x-2 h-max'
       >
         {
           items.map((item, idx) => (
@@ -79,7 +79,7 @@ function Navigation() {
                     <Link
                       key={`link-${idx}`}
                       href={item.link}
-                      className='p-2 border-b-2 border-gray-100 dark:border-neutral-900 w-full'
+                      className='p-2 border-b-2 border-gray-100 dark:border-neutral-900 w-full text-lg'
                       onClick={() => setTimeout(() => setIsOpen(prev => !prev), 300)}
                     >
                       {item.name}

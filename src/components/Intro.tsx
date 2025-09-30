@@ -46,7 +46,7 @@ const Intro = () => {
         <motion.div
           variants={childVariant}
         >
-          <h1 className='text-5xl md:text-7xl font-sans mt-5 font-bold tracking-tight my-2'>
+          <h1 className='text-5xl md:text-7xl font-sans mt-5 font-bold tracking-tight my-2 bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-600 dark:from-neutral-700 dark:to-white'>
             Krish
           </h1>
         </motion.div>

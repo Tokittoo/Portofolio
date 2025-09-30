@@ -5,6 +5,7 @@ import { Project } from './Projects'
 import Link from 'next/link'
 import { motion } from 'motion/react'
 import { Tags } from './Tags'
+import { IconExternalLink } from '@tabler/icons-react'
 
 const Card = ({ project }: { project: Project }) => {
   const childVariant = {
@@ -34,16 +35,17 @@ const Card = ({ project }: { project: Project }) => {
         <h1 className='text-2xl font-sans tracking-tight font-semibold my-4'>{project.title}</h1>
         <p className='text-zinc-700 dark:text-zinc-300 mb-8'>{project.description}</p>
       </div>
-      <div className='flex gap-2 flex-wrap'>
-        {
-          <Tags items={project.tags} />
-        }
+      <div className='flex gap-2 flex-wrap items-center justify-between'>
+        <div className='flex gap-2 flex-wrap'>
+          {<Tags items={project.tags} />}
+        </div>
+        {project.link && (
+          <Link href={project.link} target={'_blank'} className='rounded-lg border border-gray-200 dark:border-neutral-800 px-3 py-2 text-sm transition-colors duration-200 hover:bg-white dark:hover:bg-white hover:text-black dark:hover:text-black text-neutral-700 dark:text-neutral-300 flex items-center gap-1'>
+            <IconExternalLink size={16} />
+            Live
+          </Link>
+        )}
       </div>
-      {
-        project.link && (
-          <Link href={project.link} target={'_blank'} className='absolute inset-0 pointer-events-none' />
-        )
-      }
     </motion.div>
   )
 }
