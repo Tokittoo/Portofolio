@@ -21,5 +21,5 @@ export default Home
 
 export const metadata: Metadata = {
   title: 'Krish',
-  description: 'Krishna Prasath — Developer building fast, accessible web apps with Next.js, TypeScript, and Tailwind CSS.',
+  description: 'Where logic codes with imagination — this is my playground.',
 }

@@ -18,9 +18,7 @@ const skills: Skill[] = [
   { name: 'HTML', logo: <IconBrandHtml5 /> },
   { name: 'CSS', logo: <IconBrandCss3 /> },
   { name: 'Tailwind CSS', logo: <IconBrandTailwind /> },
-  { name: 'Framer Motion', logo: <IconBrandFramerMotion /> },
-  { name: 'Git', logo: <IconBrandGit /> },
-  { name: 'GitHub', logo: <IconBrandGithub /> },
+  { name: 'Framer Motion', logo: <IconBrandFramerMotion /> }
 ]
 
 function Skills() {
@@ -55,10 +53,10 @@ function Skills() {
       initial={'hidden'}
       animate={'show'}
       variants={parentVariant}
-      className='md:p-2 p-8'
+      className='md:p-2 px-8 pt-1 pb-8'
       id='skills'
     >
-      <motion.h2 variants={childVariant} className='text-4xl ml-2 my-8 font-bold font-sans tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-600 dark:from-neutral-700 dark:to-white'>Skills</motion.h2>
+      <motion.h2 variants={childVariant} className='text-4xl ml-2 mt-1 mb-5 font-bold font-sans tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-neutral-900 to-neutral-600 dark:from-neutral-700 dark:to-white'>Skills</motion.h2>
       <div className='flex flex-wrap gap-3 max-md:mx-4'>
         {skills.map(skill => (
           <motion.div

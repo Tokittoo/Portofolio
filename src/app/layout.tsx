@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Krishna Prasath",
   },
   description:
-    "Portfolio of Krishna Prasath — Developer crafting performant web apps, modern UIs, and delightful experiences.",
+    "Where logic codes with imagination — this is my playground.",
   keywords: [
     "Krishna",
     "Krishna Prasath",
